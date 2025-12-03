@@ -31,7 +31,7 @@ public class TestDecrypt {
 
     public static void main(String[] args) throws Exception {
 
-        System.out.println("\n\n\n------------- Welcome to Encryption Decryption -------------");
+        System.out.println("\n\n\n------------- Welcome to Encryption Decryption Program -------------");
         System.out.println("                                                 \n" +
                            ",--------.        ,--.                           \n" +
                            "'--.  .--',---. ,-'  '-.,--.--.,--,--.,--.  ,--. \n" +
@@ -52,30 +52,30 @@ public class TestDecrypt {
                     System.out.println("Enter value : ");
                     String encryptedGCM = scanner.next();
                     String decryptedGCM = decryptForBackendGCM(encryptedGCM);
-                    System.out.println("Decrypted value: " + decryptedGCM);
+                    System.out.println("Decrypted value: " + decryptedGCM + "\n");
                     Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
                     clipboard.setContents(new StringSelection(decryptedGCM), null);
-                    System.out.println("############################");
+                    System.out.println("############################\n\n");
                     break;
                 }
                 case 2: {
                     System.out.println("Enter value : ");
                     String text = scanner.next();
                     String ecryptedGCM = encrypt(text);
-                    System.out.println("Ecrypted value: " + ecryptedGCM);
+                    System.out.println("Ecrypted value: " + ecryptedGCM + "\n");
                     Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
                     clipboard.setContents(new StringSelection(ecryptedGCM), null);
-                    System.out.println("############################");
+                    System.out.println("############################\n\n");
                     break;
                 }
                 case 3: {
                     System.out.println("Enter value : ");
                     String textUI = scanner.next();
                     String decryptedUIGCM = decryptForFrontend(textUI);
-                    System.out.println("Decrypted value: " + decryptedUIGCM);
+                    System.out.println("Decrypted value: " + decryptedUIGCM + "\n");
                     Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
                     clipboard.setContents(new StringSelection(decryptedUIGCM), null);
-                    System.out.println("############################");
+                    System.out.println("############################\n\n");
                     break;
                 }
                 case 4:
